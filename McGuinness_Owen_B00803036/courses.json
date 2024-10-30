@@ -1,0 +1,113 @@
+[
+    {
+      "name": "ComputerScience",
+      "code": "CS101",
+      "department": "Computer Science",
+      "level": "Undergraduate",
+      "credits": 3,
+      "duration": "1 Semester",
+      "lecturer": "Dr. John Smith",
+      "description": "An introductory course covering fundamental concepts of computer science including algorithms, data structures, and programming basics.",
+      "campus": "Campus1"
+    },
+    {
+      "name": "Mathematics",
+      "code": "MATH201",
+      "department": "Mathematics",
+      "level": "Undergraduate",
+      "credits": 4,
+      "duration": "2 Semesters",
+      "lecturer": "Prof. Sarah Johnson",
+      "description": "A comprehensive course covering various branches of mathematics, including algebra, calculus, and geometry.",
+      "campus": "Campus2"
+    },
+    {
+      "name": "Biology",
+      "code": "BIO101",
+      "department": "Biology",
+      "level": "Undergraduate",
+      "credits": 3,
+      "duration": "1 Semester",
+      "lecturer": "Dr. Emily Carter",
+      "description": "An introductory course exploring the basic concepts and principles of biology, including cell biology, genetics, and evolution.",
+      "campus": "Campus3"
+    },
+    {
+      "name": "Chemistry",
+      "code": "CHEM202",
+      "department": "Chemistry",
+      "level": "Undergraduate",
+      "credits": 3,
+      "duration": "1 Semester",
+      "lecturer": "Prof. Michael Brown",
+      "description": "A study of the composition, structure, properties, and reactions of matter, with emphasis on chemical bonding and periodic trends.",
+      "campus": "Campus1"
+    },
+    {
+      "name": "Physics",
+      "code": "PHYS403",
+      "department": "Physics",
+      "level": "Graduate",
+      "credits": 4,
+      "duration": "2 Semesters",
+      "lecturer": "Dr. Laura Martinez",
+      "description": "An advanced course covering classical mechanics, electromagnetism, thermodynamics, and modern physics concepts.",
+      "campus": "Campus2"
+    },
+    {
+      "name": "Economics",
+      "code": "ECON302",
+      "department": "Economics",
+      "level": "Undergraduate",
+      "credits": 3,
+      "duration": "1 Semester",
+      "lecturer": "Prof. David Thompson",
+      "description": "A study of economic theories and principles related to production, distribution, and consumption of goods and services.",
+      "campus": "Campus3"
+    },
+    {
+      "name": "Psychology",
+      "code": "PSYCH301",
+      "department": "Psychology",
+      "level": "Undergraduate",
+      "credits": 3,
+      "duration": "1 Semester",
+      "lecturer": "Dr. Elizabeth Wilson",
+      "description": "An exploration of human behavior and mental processes, including perception, cognition, emotion, and personality.",
+      "campus": "Campus1"
+    },
+    {
+      "name": "History",
+      "code": "HIST401",
+      "department": "History",
+      "level": "Undergraduate",
+      "credits": 4,
+      "duration": "2 Semesters",
+      "lecturer": "Prof. James Anderson",
+      "description": "An overview of historical events, movements, and civilizations from ancient times to the present day.",
+      "campus": "Campus2"
+    },
+    {
+      "name": "Literature",
+      "code": "LIT301",
+      "department": "English",
+      "level": "Undergraduate",
+      "credits": 3,
+      "duration": "1 Semester",
+      "lecturer": "Prof. Samantha Lee",
+      "description": "A survey of literary works from different genres, periods, and cultures, with emphasis on analysis and interpretation.",
+      "campus": "Campus3"
+    },
+    {
+      "name": "Business",
+      "code": "BUS101",
+      "department": "Business",
+      "level": "Undergraduate",
+      "credits": 3,
+      "duration": "1 Semester",
+      "lecturer": "Dr. Robert Garcia",
+      "description": "An introduction to the principles and practices of business management, finance, marketing, and entrepreneurship.",
+      "campus": "Campus1"
+    }
+  ]
+  

@@ -1,0 +1,348 @@
+[
+    {
+        "tag": "no response",
+        "pattern": [null],
+        "responses": ["Sorry I didn't quite understand that, could you try a different wording?"],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "greeting",
+        "pattern": ["hi", "hello", "hey"],
+        "responses": ["Hi there!", "Hello!", "Hey!"],
+        "roles": ["all"],
+        "num_of_times_used": 12,
+        "helpful": 3,
+        "not_helpful": 1,
+        "feedback": [
+            "Very Good",
+            "Good",
+            "Nice",
+            "Bad"
+        ]
+    },
+    {
+        "tag": "goodbye",
+        "pattern": ["bye", "goodbye"],
+        "responses": ["Goodbye!", "See you later!"],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "student_info",
+        "pattern": ["student", "info", "detail"],
+        "responses": ["As a student, you can access your grades, course information, and schedule through our student portal."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "staff_info",
+        "pattern": ["staff", "info", "detail"],
+        "responses": ["As a staff member, you have access to administrative tools and resources to manage courses and students."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "course_info",
+        "pattern": ["course", "info", "detail"],
+        "responses": ["You can find information about our courses on our website or by contacting the relevant department."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "registration",
+        "pattern": ["registration", "register", "course"],
+        "responses": ["Registration for courses can be done through our online portal. Please check the registration deadlines."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "office_hours",
+        "pattern": ["office", "hour", "meet", "professor"],
+        "responses": ["You can find your professor's office hours on their syllabus or by contacting them directly."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "assignment_submission",
+        "pattern": ["submit", "assignment", "submission"],
+        "responses": ["Assignment submissions are typically done through our learning management system. Make sure to follow the instructions provided by your instructor."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "grade_inquiry",
+        "pattern": ["grade", "inquiry", "check"],
+        "responses": ["You can check your grades on the student portal. If you have any concerns about your grades, please contact your instructor."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "course_schedule",
+        "pattern": ["course", "schedule", "class"],
+        "responses": ["Your course schedule can be viewed on the student portal. Make sure to check for any updates or changes."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "assignment_deadlines",
+        "pattern": ["assignment", "deadline", "due"],
+        "responses": ["Assignment deadlines are typically provided by your instructors. Make sure to check your course syllabus or the course website for specific dates."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "faculty_advising",
+        "pattern": ["faculty", "advising", "academic", "advisor"],
+        "responses": ["Faculty advising appointments can be scheduled through the academic advising office. Your academic advisor can provide guidance on course selection, degree requirements, and academic policies."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "curriculum_requirements",
+        "pattern": ["curriculum", "requirement", "degree"],
+        "responses": ["Curriculum requirements vary depending on your degree program and major. You can find detailed information about degree requirements in the university catalog or by consulting with your academic advisor."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "course_registration_assistance",
+        "pattern": ["course", "registration", "assistance", "help"],
+        "responses": ["For assistance with course registration, you can contact the registrar's office or visit the student services center. They can provide guidance on course selection, registration procedures, and enrollment issues."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "staff_support",
+        "pattern": ["staff", "support", "technical", "assistance"],
+        "responses": ["For staff support or technical assistance, please contact the IT help desk or the administrative services office. They can assist you with computer-related issues, software access, and administrative tasks."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "department_resources",
+        "pattern": ["department", "resource", "departmental", "support"],
+        "responses": ["Each department offers resources and support services for students and faculty. You can visit the department's website or contact the department office for more information about available resources."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "student_clubs",
+        "pattern": ["student", "club", "extracurricular", "activity"],
+        "responses": ["There are various student clubs and organizations on campus that offer opportunities for involvement and engagement. You can explore different clubs and activities through the student life office or the university website."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "library_services",
+        "pattern": ["library", "service", "resource"],
+        "responses": ["The library offers a variety of services and resources, including research assistance, access to databases, and borrowing privileges. You can visit the library website or speak with a librarian for more information."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "career_services",
+        "pattern": ["career", "service", "job", "placement"],
+        "responses": ["The career services office provides support for students and alumni in their career development and job search process. Services include resume review, interview preparation, and job placement assistance."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "financial_aid",
+        "pattern": ["financial", "aid", "scholarship"],
+        "responses": ["The financial aid office assists students with securing financial assistance for their education, including scholarships, grants, and loans. You can contact the financial aid office for information about available aid programs and application procedures."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "campus_events",
+        "pattern": ["campus", "event", "activity"],
+        "responses": ["There are various events and activities happening on campus throughout the year, including cultural events, guest lectures, and social gatherings. You can stay updated on campus events by checking the university calendar or following campus social media channels."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "faculty_resources",
+        "pattern": ["faculty", "resource", "teaching"],
+        "responses": ["Faculty members have access to a range of resources and support services to enhance their teaching effectiveness and professional development. These resources may include workshops, instructional materials, and technology support."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+        "tag": "health_services",
+        "pattern": ["health", "service", "medical"],
+        "responses": ["The university health center provides medical services and support for students, including routine health check-ups, immunizations, and counseling services. You can schedule an appointment or visit the health center during regular hours."],
+        "roles": ["all"],
+        "num_of_times_used": 0,
+        "helpful": 0,
+        "not_helpful": 0,
+        "feedback": []
+    },
+    {
+      "tag": "library_access",
+      "pattern": ["library", "access", "card", "borrow", "book"],
+      "responses": ["To access library resources, you'll need a valid library card. You can borrow books and other materials from the library's collection."],
+      "roles": ["all"],
+      "num_of_times_used": 0,
+      "helpful": 0,
+      "not_helpful": 0,
+      "feedback": []
+  },
+  {
+      "tag": "class_registration",
+      "pattern": ["class", "registration", "enroll", "course", "classroom"],
+      "responses": ["Class registration allows you to enroll in courses for the upcoming semester. Make sure to check the course catalog and meet any prerequisites before registering."],
+      "roles": ["all"],
+      "num_of_times_used": 0,
+      "helpful": 0,
+      "not_helpful": 0,
+      "feedback": []
+  },
+  {
+      "tag": "course_evaluation",
+      "pattern": ["course", "evaluation", "feedback", "rate", "professor"],
+      "responses": ["Course evaluations provide valuable feedback to professors and administrators. Your input helps improve course content and instruction quality."],
+      "roles": ["all"],
+      "num_of_times_used": 0,
+      "helpful": 0,
+      "not_helpful": 0,
+      "feedback": []
+  },
+  {
+      "tag": "academic_calendar",
+      "pattern": ["academic", "calendar", "semester", "schedule"],
+      "responses": ["The academic calendar outlines important dates and deadlines for the academic year, including semester start and end dates, holidays, and registration periods."],
+      "roles": ["all"],
+      "num_of_times_used": 0,
+      "helpful": 0,
+      "not_helpful": 0,
+      "feedback": []
+  },
+  {
+      "tag": "graduation_requirements",
+      "pattern": ["graduation", "requirement", "degree", "completion"],
+      "responses": ["Graduation requirements ensure that you've completed all necessary coursework and met the criteria for your degree program. Make sure to review your program's requirements with your academic advisor."],
+      "roles": ["all"],
+      "num_of_times_used": 0,
+      "helpful": 0,
+      "not_helpful": 0,
+      "feedback": []
+  },
+  {
+      "tag": "financial_assistance",
+      "pattern": ["financial", "assistance", "scholarship", "grant", "loan"],
+      "responses": ["Financial assistance programs, such as scholarships, grants, and loans, can help offset the cost of tuition and other educational expenses. Be sure to explore all available options and apply for aid as needed."],
+      "roles": ["all"],
+      "num_of_times_used": 0,
+      "helpful": 0,
+      "not_helpful": 0,
+      "feedback": []
+  },
+  {
+      "tag": "student_support_services",
+      "pattern": ["student", "support", "service", "counseling", "advising"],
+      "responses": ["Student support services provide counseling, advising, and other resources to help you succeed academically and personally. Don't hesitate to reach out if you need assistance or guidance."],
+      "roles": ["all"],
+      "num_of_times_used": 0,
+      "helpful": 0,
+      "not_helpful": 0,
+      "feedback": []
+  },
+  {
+      "tag": "career_advice",
+      "pattern": ["career", "advice", "job", "interview", "resume"],
+      "responses": ["Career advice services offer assistance with job searches, resume writing, interview preparation, and career planning. Take advantage of these resources to enhance your professional development."],
+      "roles": ["all"],
+      "num_of_times_used": 0,
+      "helpful": 0,
+      "not_helpful": 0,
+      "feedback": []
+  },
+  {
+      "tag": "academic_support",
+      "pattern": ["academic", "support", "tutoring", "study", "group"],
+      "responses": ["Academic support services, such as tutoring and study groups, are available to help you excel in your coursework. Don't hesitate to seek assistance if you're struggling with any academic subject."],
+      "roles": ["all"],
+      "num_of_times_used": 0,
+      "helpful": 0,
+      "not_helpful": 0,
+      "feedback": []
+  },
+  {
+      "tag": "technology_resources",
+      "pattern": ["technology", "resource", "computer", "software", "access"],
+      "responses": ["Technology resources provide access to computers, software, and other digital tools needed for coursework and research. Visit the IT department or technology center for assistance with technical issues."],
+      "roles": ["all"],
+      "num_of_times_used": 0,
+      "helpful": 0,
+      "not_helpful": 0,
+      "feedback": []
+  }
+  ]
+  

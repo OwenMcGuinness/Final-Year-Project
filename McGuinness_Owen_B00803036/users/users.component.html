@@ -1,0 +1,77 @@
+<div class="container" style="margin-top: 80px;">
+  <div class="row">
+    <div class="col-md-8 mb-3">
+      <input type="text" class="form-control" placeholder="Search Users..." [(ngModel)]="searchText" (input)="searchUsers()">
+    </div>
+    <div class="col-md-4 mb-3">
+      <button class="btn btn-primary btn-block" (click)="openAddUserModal()">Add User</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let user of users">
+      <div class="card" [routerLink]="['/users', user.username]" style="cursor: pointer;">
+        <div class="card-body">
+          <h5 class="card-title clickable">{{ user.name }} ({{ user.username }})</h5>
+          <p class="small"><strong>Email:</strong> {{ user.email }}</p>
+          <p class="small"><strong>Date of Birth:</strong> {{ user.date_of_birth }}</p>
+          <p class="small"><strong>Courses:</strong> {{ user.courses.join(', ') }}</p>
+          <p class="small"><strong>Roles:</strong> {{ user.roles.join(', ') }}</p>
+          <p class="small"><strong>Admin Perms:</strong> {{ user.admin }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addUserModalLabel">New User Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeAddUserModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form (submit)="addNewUser()">
+          <div class="form-group">
+            <label for="username" class="small">Username:</label>
+            <input type="text" class="form-control form-control-sm" id="username" [(ngModel)]="newUser.username" name="username">
+          </div>
+          <div class="form-group">
+            <label for="password" class="small">Password:</label>
+            <input type="password" class="form-control form-control-sm" id="password" [(ngModel)]="newUser.password" name="password">
+          </div>
+          <div class="form-group">
+            <label for="email" class="small">Email:</label>
+            <input type="email" class="form-control form-control-sm" id="email" [(ngModel)]="newUser.email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="name" class="small">Name:</label>
+            <input type="text" class="form-control form-control-sm" id="name" [(ngModel)]="newUser.name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="dateOfBirth" class="small">Date of Birth:</label>
+            <input type="date" class="form-control form-control-sm" id="dateOfBirth" [(ngModel)]="newUser.date_of_birth" name="dateOfBirth">
+          </div>
+          <div class="form-group">
+            <label for="courses" class="small">Courses:</label>
+            <input type="text" class="form-control form-control-sm" id="courses" [(ngModel)]="newUser.courses" name="courses">
+          </div>
+          <div class="form-group">
+            <label for="roles" class="small">Roles:</label>
+            <input type="text" class="form-control form-control-sm" id="roles" [(ngModel)]="newUser.roles" name="roles">
+          </div>
+          <div class="form-group">
+            <label class="small">Admin:</label><br>
+            <input type="checkbox" id="adminCheckbox" [(ngModel)]="newUser.admin" name="adminCheckbox">
+          </div>
+          <div *ngIf="usernameExists" class="alert alert-danger" role="alert">
+            Username is already taken. Please choose a different username.
+          </div>          
+          <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

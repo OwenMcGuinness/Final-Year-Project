@@ -1,0 +1,42 @@
+[
+    {
+        "name": "University of Techville",
+        "location": "Techville, USA",
+        "established_year": 1965,
+        "undergraduate_population": 15000,
+        "graduate_population": 5000,
+        "faculties": ["Engineering", "Computer Science", "Business", "Arts"],
+        "sports_facilities": ["Football field", "Basketball court", "Tennis courts"],
+        "student_clubs": ["Debate Club", "Chess Club", "Music Society"],
+        "library": true,
+        "cafeteria": true,
+        "dormitories": true
+      },
+      {
+        "name": "Central University",
+        "location": "Downtown, Metropolis",
+        "established_year": 1978,
+        "undergraduate_population": 20000,
+        "graduate_population": 6000,
+        "faculties": ["Science", "Medicine", "Law", "Social Sciences"],
+        "sports_facilities": ["Swimming pool", "Gymnasium", "Athletics track"],
+        "student_clubs": ["Drama Club", "Photography Club", "Environmental Society"],
+        "library": true,
+        "cafeteria": true,
+        "dormitories": true
+      },
+      {
+        "name": "Green Valley University",
+        "location": "Green Valley, Canada",
+        "established_year": 1990,
+        "undergraduate_population": 12000,
+        "graduate_population": 4000,
+        "faculties": ["Environmental Studies", "Biology", "Education"],
+        "sports_facilities": ["Soccer field", "Volleyball court", "Fitness center"],
+        "student_clubs": ["Gardening Club", "Hiking Club", "Animal Rights Club"],
+        "library": true,
+        "cafeteria": true,
+        "dormitories": true
+      }
+      
+]

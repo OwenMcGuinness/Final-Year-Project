@@ -1,0 +1,46 @@
+<div class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand ml-4" href="#">Ulster University</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/campuses">Campuses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/courses">Courses</a>
+      </li>
+      <ng-container *ngIf="isLoggedIn">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/intents">Intents</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/users">Users</a>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+  <div class="ml-auto mr-4">
+    <div class="form-inline">
+      <ng-container *ngIf="isLoggedIn; else loggedOut">
+        <button class="btn btn-secondary" routerLink="/profile">Profile</button>
+        <button class="btn btn-danger ml-2" (click)="logout()">Logout</button>
+      </ng-container>
+      <ng-template #loggedOut>
+        <form class="form-inline" (submit)="login()">
+          <input type="text" class="form-control mr-sm-2" placeholder="Username" [(ngModel)]="username" name="username">
+          <input type="password" class="form-control mr-sm-2" placeholder="Password" [(ngModel)]="password" name="password">
+          <button type="submit" class="btn btn-success">Login</button>
+        </form>
+        <div *ngIf="loginError" class="alert alert-danger mt-2" role="alert">
+          {{ loginError }}
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

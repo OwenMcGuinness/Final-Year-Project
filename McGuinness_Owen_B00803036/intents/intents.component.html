@@ -1,0 +1,63 @@
+<div class="container" style="margin-top: 80px;">
+  <div class="row">
+    <div class="col-md-8 mb-3">
+      <input type="text" class="form-control" placeholder="Search Intents..." [(ngModel)]="searchText" (input)="searchIntents()">
+    </div>
+    <div class="col-md-4 mb-3">
+      <button class="btn btn-primary btn-block" (click)="openAddIntentModal()">Add Intent</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-6 mb-3" *ngFor="let intent of intents">
+          <div class="card h-100" [routerLink]="['/intents', intent._id.$oid]">
+            <div class="card-body">
+              <h5 class="card-title">{{ intent.tag }}</h5>
+              <p class="card-text"><strong>Pattern:</strong> {{ intent.pattern }}</p>
+              <p class="card-text"><strong>Roles:</strong> {{ intent.roles }}</p>
+              <p class="card-text"><strong>Times Used:</strong> {{ intent.num_of_times_used }}</p>
+              <p class="card-text"><strong>Helpful:</strong> {{ intent.helpful }}</p>
+              <p class="card-text"><strong>Not Helpful:</strong> {{ intent.not_helpful }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addIntentModal" tabindex="-1" role="dialog" aria-labelledby="addIntentModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addIntentModalLabel">Add Intent</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeAddIntentModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form (submit)="addNewIntent()">
+          <div class="form-group">
+            <label for="tag">Tag:</label>
+            <input type="text" class="form-control" id="tag" [(ngModel)]="newIntent.tag" name="tag">
+          </div>
+          <div class="form-group">
+            <label for="pattern">Pattern:</label>
+            <input type="text" class="form-control" id="pattern" [(ngModel)]="newIntent.pattern" name="pattern">
+          </div>
+          <div class="form-group">
+            <label for="responses">Responses:</label>
+            <input type="text" class="form-control" id="responses" [(ngModel)]="newIntent.responses" name="responses">
+          </div>
+          <div class="form-group">
+            <label for="roles">Roles:</label>
+            <input type="text" class="form-control" id="roles" [(ngModel)]="newIntent.roles" name="roles">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,80 @@
+<div class="container" style="margin-top: 80px;">
+  <div class="row">
+    <div class="col-md-8 mb-3">
+      <input type="text" class="form-control" placeholder="Search Courses..." [(ngModel)]="searchText" (input)="searchCourses()">
+    </div>
+    <div class="col-md-4 mb-3">
+      <button class="btn btn-primary btn-block" (click)="openAddCourseModal()">Add Course</button>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-6" *ngFor="let course of filteredCourses">
+      <div class="card mb-3"  [routerLink]="['/courses', course._id.$oid]"  style="cursor: pointer;">
+        <div class="card-body fixed-card-height">
+          <h5 class="card-title">{{ course.name }}</h5>
+          <strong>Code:</strong> {{ course.code }} <br>
+          <strong>Department:</strong> {{ course.department }} <br>
+          <strong>Level:</strong> {{ course.level }} <br>
+          <strong>Credits:</strong> {{ course.credits }} <br>
+          <strong>Duration:</strong> {{ course.duration }} <br>
+          <strong>Lecturer:</strong> {{ course.lecturer }} <br>
+          <strong>Description:</strong> {{ course.description }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="addCourseModal" tabindex="-1" role="dialog" aria-labelledby="addCourseModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addCourseModalLabel">Add Course</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeAddCourseModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form (submit)="addCourse()">
+          <div class="form-group mb-2">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="newCourse.name" name="name" required>
+          </div>
+          <div class="form-group mb-2">
+            <label for="code">Code:</label>
+            <input type="text" class="form-control" id="code" [(ngModel)]="newCourse.code" name="code" required>
+          </div>
+          <div class="form-group mb-2">
+            <label for="department">Department:</label>
+            <input type="text" class="form-control" id="department" [(ngModel)]="newCourse.department" name="department" required>
+          </div>
+          <div class="form-group mb-2">
+            <label for="level">Level:</label>
+            <input type="text" class="form-control" id="level" [(ngModel)]="newCourse.level" name="level" required>
+          </div>
+          <div class="form-group mb-2">
+            <label for="credits">Credits:</label>
+            <input type="number" class="form-control" id="credits" [(ngModel)]="newCourse.credits" name="credits" required>
+          </div>
+          <div class="form-group mb-2">
+            <label for="duration">Duration:</label>
+            <input type="text" class="form-control" id="duration" [(ngModel)]="newCourse.duration" name="duration">
+          </div>
+          <div class="form-group mb-2">
+            <label for="lecturer">Lecturer:</label>
+            <input type="text" class="form-control" id="lecturer" [(ngModel)]="newCourse.lecturer" name="lecturer" required>
+          </div>
+          <div class="form-group mb-2">
+            <label for="description">Description:</label>
+            <textarea class="form-control" id="description" [(ngModel)]="newCourse.description" name="description" required></textarea>
+          </div>
+          <div class="form-group mb-2">
+            <label for="campus">Campus:</label>
+            <input type="text" class="form-control" id="campus" [(ngModel)]="newCourse.campus" name="campus" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

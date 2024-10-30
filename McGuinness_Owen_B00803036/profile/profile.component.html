@@ -1,0 +1,18 @@
+<div class="container" style="margin-top: 80px;">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">User Profile</h5>
+      <div *ngIf="userProfile">
+        <p><strong>Username:</strong> {{ userProfile.username }}</p>
+        <p><strong>Name:</strong> {{ userProfile.name }}</p>
+        <p><strong>Date of Birth:</strong> {{ userProfile.date_of_birth }}</p>
+        <p><strong>Email:</strong> {{ userProfile.email }}</p>
+        <p><strong>Roles:</strong> {{ userProfile.roles.join(', ') }}</p>
+        <p><strong>Courses:</strong> {{ userProfile.courses.join(', ') }}</p>
+      </div>
+      <div *ngIf="!userProfile">
+        <p>Profile not Found</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,88 @@
+<div class="container" style="margin-top: 80px;">
+  <h2>{{ campus.name }}</h2>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ campus.name }}</h5>
+          <p class="card-text"><strong>Location:</strong> {{ campus.location }}</p>
+          <p class="card-text"><strong>Established Year:</strong> {{ campus.established_year }}</p>
+          <p class="card-text"><strong>Undergraduate Population:</strong> {{ campus.undergraduate_population }}</p>
+          <p class="card-text"><strong>Graduate Population:</strong> {{ campus.graduate_population }}</p>
+          <p class="card-text"><strong>Faculties:</strong> {{ campus.faculties.join(', ') }}</p>
+          <p class="card-text"><strong>Sports Facilities:</strong> {{ campus.sports_facilities.join(', ') }}</p>
+          <p class="card-text"><strong>Student Clubs:</strong> {{ campus.student_clubs.join(', ') }}</p>
+          <p class="card-text"><strong>Library:</strong> {{ campus.library ? 'Yes' : 'No' }}</p>
+          <p class="card-text"><strong>Cafeteria:</strong> {{ campus.cafeteria ? 'Yes' : 'No' }}</p>
+          <p class="card-text"><strong>Dormitories:</strong> {{ campus.dormitories ? 'Yes' : 'No' }}</p>
+          <button class="btn btn-primary mr-2" (click)="openUpdateCampusModal()">Update Campus</button>
+          <button class="btn btn-danger" (click)="deleteCampus()">Delete Campus</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="updateCampusModal" tabindex="-1" role="dialog" aria-labelledby="updateCampusModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="updateCampusModalLabel">Update Campus</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeUpdateCampusModal()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form (submit)="updateCampus()">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" [(ngModel)]="campus.name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="location">Location:</label>
+              <input type="text" class="form-control" id="location" [(ngModel)]="campus.location" name="location" required>
+            </div>
+            <div class="form-group">
+              <label for="established_year">Established Year:</label>
+              <input type="number" class="form-control" id="established_year" [(ngModel)]="campus.established_year" name="established_year" required>
+            </div>
+            <div class="form-group">
+              <label for="undergraduate_population">Undergraduate Population:</label>
+              <input type="number" class="form-control" id="undergraduate_population" [(ngModel)]="campus.undergraduate_population" name="undergraduate_population" required>
+            </div>
+            <div class="form-group">
+              <label for="graduate_population">Graduate Population:</label>
+              <input type="number" class="form-control" id="graduate_population" [(ngModel)]="campus.graduate_population" name="graduate_population" required>
+            </div>
+            <div class="form-group">
+              <label for="faculties">Faculties:</label>
+              <input type="text" class="form-control" id="faculties" [(ngModel)]="campus.faculties" name="faculties" required>
+            </div>
+            <div class="form-group">
+              <label for="sports_facilities">Sports Facilities:</label>
+              <input type="text" class="form-control" id="sports_facilities" [(ngModel)]="campus.sports_facilities" name="sports_facilities" required>
+            </div>
+            <div class="form-group">
+              <label for="student_clubs">Student Clubs:</label>
+              <input type="text" class="form-control" id="student_clubs" [(ngModel)]="campus.student_clubs" name="student_clubs" required>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="library" [(ngModel)]="campus.library" name="library">
+              <label class="form-check-label" for="library">Library</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="cafeteria" [(ngModel)]="campus.cafeteria" name="cafeteria">
+              <label class="form-check-label" for="cafeteria">Cafeteria</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="dormitories" [(ngModel)]="campus.dormitories" name="dormitories">
+              <label class="form-check-label" for="dormitories">Dormitories</label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Update</button>
+          </form>
+          <button class="btn btn-danger mt-3" (click)="deleteCampus()">Delete Campus</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
